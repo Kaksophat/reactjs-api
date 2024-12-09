@@ -1,0 +1,99 @@
+.displayproduct {
+    display: flex;
+    margin: 100px 170px;
+    margin-bottom: 50px;
+  }
+
+  .displayproduct-img-list {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+  .displayproduct-img-list img {
+    height: 160px;
+  }
+  .displayproduct-main-img {
+    width: 480px;
+    height: 600px;
+  }
+  .displayproduct-right {
+    display: flex;
+    flex-direction: column;
+    margin: 0px 70px;
+    gap: 30px;
+  }
+  .displayproduct-right h1 {
+    font-size: 40px;
+    color: #3d3d3d;
+    font-family: 700;
+  }
+  .displyproduct-right-price {
+    display: flex;
+    margin: 40px 0;
+    font-size: 24px;
+    font-weight: 700;
+    gap: 30px;
+  }
+  .displayproduct-right-price-old {
+    color: #818181;
+    text-decoration: line-through;
+  }
+  .displayproduct-right-price-new {
+    color: red;
+  }
+
+ 
+  .displayproduct-right button {
+    width: 200px;
+    padding: 20px 40px;
+    color: white;
+    background: red;
+    font-size: 15px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+  }
+  .displayproduct-quantity{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+  .displayproduct-quantity .quantity-controls{
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    margin-left: 0;
+    padding-left: 0;
+    gap: 40px;
+  }
+  .displayproduct-quantity .quantity-controls .quantity-minus,.displayproduct-quantity .quantity-controls .quantity-plus{
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+    padding: 5px 5px;
+    margin-top: 3px;
+    width: 20px;
+  }
+  .displayproduct-quantity .quantity-controls .quantity{
+    background-color: white;
+    color: black;
+    padding: 0;
+    width: 20px;
+  }
+  .displayproduct-quantity .quantity-controls h1{
+    font-size: 20px;
+  }
+  .display-header{
+    margin: 100px 50px;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+  .quantity{
+    font-size: 30px;
+  }
+ 

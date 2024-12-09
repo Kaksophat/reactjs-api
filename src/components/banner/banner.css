@@ -1,0 +1,104 @@
+.banner-container {
+    width: 100%;
+    min-height: 500px;
+    background: #3498db;
+    color: white;
+    display: flex;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.banner-content {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+}
+
+.banner-text {
+    flex: 1;
+    z-index: 1;
+}
+
+.banner-title {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+    line-height: 1.2;
+}
+
+.banner-subtitle {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    opacity: 0.9;
+}
+
+.banner-cta {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: #e74c3c;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: 600;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.banner-cta:hover {
+    background-color: #c0392b;
+    transform: translateY(-2px);
+}
+
+.banner-image {
+    flex: 1;
+    max-width: 500px;
+    position: relative;
+}
+
+.banner-image img {
+    width: 100%;
+    background-color: #3498db;
+    height: 500px;
+    object-fit: cover;
+    /* border-radius: 10px; */
+    /* box-shadow: 0 10px 20px rgba(0,0,0,0.2); */
+}
+
+.discount-badge {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background-color: #e74c3c;
+    color: white;
+    padding: 10px 15px;
+    /* border-radius: 25px; */
+    font-weight: bold;
+    animation: pulse 2s infinite;
+}
+
+
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+    100% { transform: scale(1); }
+}
+
+@media (max-width: 768px) {
+    .banner-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .banner-title {
+        font-size: 2rem;
+    }
+
+    .banner-image {
+        order: -1;
+    }
+}
